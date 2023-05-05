@@ -49,7 +49,7 @@ public class WebSeriesService {
         productionHouse.getWebSeriesList().add(webSeries);
 
         productionHouseRepository.save(productionHouse);
-        return webSeries.getId();
+        return webSeriesRepository.save(webSeries).getId();
     }
 
 }
